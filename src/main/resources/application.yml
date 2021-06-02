@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: liquibase
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        hibernate:
+            ddl-auto: create
+    datasource:
+        url: jdbc:h2:mem:liquibasedemo
+        driverClassName: org.h2.Driver
+        username: demouser
+        password: demopassword
+    h2:
+      console:
+          enabled: true
+server:
+    port: 8919
